@@ -11,6 +11,7 @@ const eventDetails = [
 
 export default function Home() {
   const [introOpen, setIntroOpen] = useState(true);
+  const assetBase = import.meta.env.BASE_URL;
 
   return (
     <main className="invite">
@@ -24,7 +25,7 @@ export default function Home() {
       </div>
 
       <section className="invite-scene" aria-label="Bella's sweet sixteen invitation">
-        <img className="invite-scene__balloons" src="/intro-balloons.png" alt="" />
+        <img className="invite-scene__balloons" src={`${assetBase}intro-balloons.png`} alt="" />
         <div className="invite-scene__shade" />
 
         <article className={`birthday-card ${introOpen ? '' : 'birthday-card--visible'}`}>
@@ -35,7 +36,7 @@ export default function Home() {
           </header>
 
           <figure className="card-cover">
-            <img src="/og.png" alt="Black, gray, and ivory balloons surrounding Bella XVI lettering" />
+            <img src={`${assetBase}og.png`} alt="Black, gray, and ivory balloons surrounding Bella XVI lettering" />
           </figure>
           <h1 className="sr-only">Bella XVI — Sweet Sixteen</h1>
 
