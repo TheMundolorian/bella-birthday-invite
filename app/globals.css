@@ -64,12 +64,12 @@ button { font: inherit; }
 
 @media (max-width: 600px) {
   .invite-scene { height: 100svh; min-height: 100svh; overflow: hidden; padding: .6rem; }
-  .birthday-card { display: grid; grid-template-rows: 3rem minmax(8.5rem, 1fr) auto auto 4.35rem; width: 100%; height: calc(100svh - 1.2rem); max-height: 48rem; padding: 0 .75rem; overflow: auto; overscroll-behavior: contain; }
+  .birthday-card { display: grid; grid-template-rows: 3rem auto auto auto 4.35rem; width: 100%; height: auto; max-height: calc(100svh - 1.2rem); padding: 0 .75rem; overflow: auto; overscroll-behavior: contain; }
   .card-masthead { min-height: 3rem; grid-template-columns: 1fr auto; gap: .5rem; border-top-width: 4px; }
   .card-masthead > span:first-child { display: none; }
   .card-masthead strong { font-size: .82rem; }
-  .card-cover { min-height: 0; margin: .55rem 0 0; overflow: hidden; }
-  .card-cover img { width: 100%; height: 100%; min-height: 0; aspect-ratio: auto; object-fit: cover; object-position: center; }
+  .card-cover { min-height: 0; margin: .55rem 0 0; overflow: hidden; background: #f2f0e9; }
+  .card-cover img { display: block; width: 100%; height: auto; min-height: 0; aspect-ratio: 1.91 / 1; object-fit: contain; object-position: center; }
   .card-message { padding: .52rem .25rem; font-size: .76rem; line-height: 1.25; }
   .card-details { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .card-detail { min-height: 4.15rem; padding: .45rem .55rem .45rem 0; }
