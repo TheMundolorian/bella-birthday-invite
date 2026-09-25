@@ -10,6 +10,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 export const metadata: Metadata = {
   title: "Bella's Sweet Sixteen | You're Invited",
   description: "You're invited to Bella's House of Balloons-inspired sweet sixteen celebration.",
+  icons: {
+    icon: '/favicon.svg?v=2',
+  },
   ...(siteUrl ? {
     metadataBase: new URL(siteUrl),
     openGraph: {
